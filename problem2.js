@@ -6,13 +6,24 @@
 // BONUS ** other data type will return 'invalid'
 
 function checkName(name) {
+
+    
     if(typeof name !== 'string'){
         return 'Invalid';
-        // console.log(typeof(name))
     }
-    //write your code here
+    
+    name = name.toLowerCase();
+    console.log(typeof(name)); // * REMOVE LATER
+    // return name;
+
+    const lastChars = 'ayieouw';
+    
 
 }
 
-const name = checkName('salmon');
-console.log(name);
+const name = 'salmon'
+console.log(checkName(name));
+
+var pattern = ['aeiouyw'];
+console.log(pattern);
+console.log(typeof(pattern));
