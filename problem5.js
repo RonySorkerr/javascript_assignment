@@ -1,14 +1,35 @@
 function monthlySavings(arr, livingCost) {
-    // You have to write your code here
-    console.log(typeof arr)
-    if (typeof arr !== 'array') {
-        return 'invalid input'
+
+    if (!Array.isArray(arr) && typeof livingCost !== "number") {
+        return "Invalid input";
     }
 
+    let totalTax = 0;
+    let totalIncome = 0;
+    // You have to write your code here
+    for (const numb of arr) {
+        totalIncome += numb;
+        
+        if (numb >= 3000) {
+            const tax = numb * 20 / 100;
+            totalTax += tax;
+            // console.log(tax);
+        }
+    }
+    
+    console.log('total income is : ' , totalIncome);
+    const totalExpensex = totalTax + livingCost;
+    console.log('total expences : ' ,  totalExpensex);   
+
+    const savings = totalIncome - totalExpensex;
+
+    if(savings < 0){
+        return 'earn more';
+    }
+    return savings;
 }
 
-const simpleArray = [1, "Hello", true, {name: "John", age: 30}, [2, 3, 4]];
-console.log(typeof simpleArray);
-const livingCost = 1250;
-
-console.log(monthlySavings(simpleArray, simpleArray));
+const array = [ 1000 , 2000 , 3000 ];
+const livingCost = 5400;
+const result = monthlySavings(array, livingCost);
+console.log(result);
