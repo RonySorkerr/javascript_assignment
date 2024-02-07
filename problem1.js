@@ -1,6 +1,6 @@
 function calculateMoney(ticketSale) {
 
-    if (ticketSale <= 0 ) {
+    if (ticketSale < 0) {
         return 'Your Pocket Is Full Of Air';
     }
 
@@ -11,11 +11,11 @@ function calculateMoney(ticketSale) {
     const guardBill = 500;
     const luanchBill = 8 * 50;
 
-    const totalExpences = guardBill + luanchBill;
+    const totalbill = guardBill + luanchBill;
 
-    console.log('your total expences is : ' , totalExpences);
+    console.log('your total bill is : ', totalbill);
 
-    const result = totalSell - totalExpences;
+    const result = totalSell - totalbill;
 
     console.log('Your total income is : ', result);
 
@@ -23,5 +23,5 @@ function calculateMoney(ticketSale) {
 
 }
 
-// const ticketSale = calculateMoney(1055);
-// console.log(ticketSale);
+const sale = calculateMoney(93);
+console.log(sale);

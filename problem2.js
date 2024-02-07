@@ -4,3 +4,15 @@
 // if condition matches return "Good Name"
 // if condition does not match return "Bad Name"
 // BONUS ** other data type will return 'invalid'
+
+function checkName(name) {
+    if(typeof name !== 'string'){
+        return 'Invalid';
+        // console.log(typeof(name))
+    }
+    //write your code here
+
+}
+
+const name = checkName('salmon');
+console.log(name);
