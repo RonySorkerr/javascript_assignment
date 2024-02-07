@@ -87,7 +87,6 @@ function password(obj) {
 
 
 
-
 // *****Problem-5****
 
 function monthlySavings(arr, livingCost) {
