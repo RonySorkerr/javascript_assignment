@@ -54,7 +54,7 @@ function checkName(name) {
 // Problem 3
 function deleteInvalids(arr) {
     if (!Array.isArray(arr)) {
-        return 'invalid type';
+        return 'Put a valid array';
     }
 
     let newArray = [];
@@ -71,10 +71,15 @@ function deleteInvalids(arr) {
 // Problem 4
 
 function password(obj) {
+
+    if (!obj || typeof obj !== 'object' || !('name' in obj) || !('birthYear' in obj) || !('siteName' in obj)) {
+        return 'invalid';
+    }
+
     const { name, birthYear, siteName } = obj;
     const nSiteName = siteName.charAt(0).toUpperCase() + siteName.slice(1);
     const password = `${nSiteName}#${name}@${birthYear}`;
-    if (birthYear.toString().length !== 4) {
+    if (birthYear.toString().length < 4) {
         return "invalid";
     }
     return password;
