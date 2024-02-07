@@ -51,10 +51,34 @@ function checkName(name) {
 
 }
 
+// Problem 3
+function deleteInvalids(arr) {
+    if (!Array.isArray(arr)) {
+        return 'invalid type';
+    }
+
+    let newArray = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (typeof arr[i] === 'number' && !isNaN(arr[i])) {
+            newArray.push(arr[i]);
+        }
+    }
+
+    return newArray;
+}
 
 
+// Problem 4
 
-
+function password(obj) {
+    const { name, birthYear, siteName } = obj;
+    const nSiteName = siteName.charAt(0).toUpperCase() + siteName.slice(1);
+    const password = `${nSiteName}#${name}@${birthYear}`;
+    if (birthYear.toString().length !== 4) {
+        return "invalid";
+    }
+    return password;
+}
 
 
 
