@@ -6,14 +6,13 @@ function monthlySavings(arr, livingCost) {
 
     let totalTax = 0;
     let totalIncome = 0;
-    // You have to write your code here
+    
     for (const numb of arr) {
         totalIncome += numb;
         
         if (numb >= 3000) {
             const tax = numb * 20 / 100;
             totalTax += tax;
-            // console.log(tax);
         }
     }
     
@@ -29,7 +28,7 @@ function monthlySavings(arr, livingCost) {
     return savings;
 }
 
-const array = [ 1000 , 2000 , 3000 ];
-const livingCost = 5400;
-const result = monthlySavings(array, livingCost);
-console.log(result);
+// const array = [ 1000 , 2000 , 3000 ];
+// const livingCost = 5400;
+// const result = monthlySavings(array, livingCost);
+// console.log(result);
