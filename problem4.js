@@ -1,3 +1,5 @@
+// function password(obj) 
+
 function password(obj) {
 
     if (!obj || typeof obj !== 'object' || !('name' in obj) || !('birthYear' in obj) || !('siteName' in obj)) {
@@ -13,5 +15,4 @@ function password(obj) {
     return password;
 }
 
-const input = { name: "maisha" , birthYear: 2002 };
-console.log(password(input));
+// passed : 

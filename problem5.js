@@ -1,4 +1,4 @@
-function monthlySavings(arr, livingCost) {
+function monthlySavings(arr , livingCost) {
 
     if (!Array.isArray(arr) && typeof livingCost !== "number") {
         return "Invalid input";
@@ -28,7 +28,6 @@ function monthlySavings(arr, livingCost) {
     return savings;
 }
 
-// const array = [ 1000 , 2000 , 3000 ];
-// const livingCost = 5400;
-// const result = monthlySavings(array, livingCost);
-// console.log(result);
+const input = 100; 
+const input1 = [ 900 , 2700 , 3400]; 
+console.log(monthlySavings(input, input1));

@@ -1,9 +1,11 @@
 // Problem 1
 
+// function calculateMoney(ticketSale)
+
 function calculateMoney(ticketSale) {
 
     if (ticketSale < 0) {
-        return 'Your Pocket Is Full Of Air';
+        return 'Invalid Number';
     }
 
     const totalSell = ticketSale * 120;
@@ -24,3 +26,5 @@ function calculateMoney(ticketSale) {
     return result;
 
 }
+
+// passed : 
