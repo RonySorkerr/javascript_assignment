@@ -1,4 +1,4 @@
-// PROBLEM 1
+
 function calculateMoney(ticketSale) {
 
     if (ticketSale < 0) {
@@ -21,7 +21,7 @@ function calculateMoney(ticketSale) {
 
 }
 
-// PROBLEM 2
+
 
 function checkName(name) {
 
@@ -43,7 +43,7 @@ function checkName(name) {
 
 }
 
-// PROBLEM 3
+
 
 function deleteInvalids(array) {
     if (!Array.isArray(array)) {
@@ -61,7 +61,7 @@ function deleteInvalids(array) {
     return newArray;
 }
 
-// PROBLEM 4 
+
 
 function password(obj) {
 
@@ -79,7 +79,6 @@ function password(obj) {
 }
 
 
-// PROBLEM 5
 
 function monthlySavings(arr , livingCost) {
 
@@ -106,6 +105,6 @@ function monthlySavings(arr , livingCost) {
     if(savings < 0){
         return "earn more";
     }
-    
+
     return savings;
 }
