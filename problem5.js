@@ -1,7 +1,8 @@
+// function monthlySavings(arr , livingCost)
 function monthlySavings(arr , livingCost) {
 
     if (!Array.isArray(arr) && typeof livingCost !== "number") {
-        return "Invalid input";
+        return "invalid input";
     }
 
     let totalTax = 0;
@@ -16,18 +17,14 @@ function monthlySavings(arr , livingCost) {
         }
     }
     
-    console.log('total income is : ' , totalIncome);
-    const totalExpensex = totalTax + livingCost;
-    console.log('total expences : ' ,  totalExpensex);   
+    const totalExpences = totalTax + livingCost;
 
-    const savings = totalIncome - totalExpensex;
+    const savings = totalIncome - totalExpences;
 
     if(savings < 0){
-        return 'earn more';
+        return "earn more";
     }
     return savings;
 }
 
-const input = 100; 
-const input1 = [ 900 , 2700 , 3400]; 
-console.log(monthlySavings(input, input1));
+

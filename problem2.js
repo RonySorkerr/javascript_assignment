@@ -6,13 +6,11 @@ function checkName(name) {
         return 'invalid';
     }
 
-    const words = name.charAt(name.length - 1).toLowerCase();
+    const goodWords = name.charAt(name.length - 1).toLowerCase();
 
-    // console.log("Last word:", words);
+    const wordsList = ['a', 'y', 'i', 'e', 'o', 'u', 'w'];
 
-    const wordList = ['a', 'y', 'i', 'e', 'o', 'u', 'w'];
-
-    if (wordList.includes(words)) {
+    if (wordsList.includes(goodWords)) {
         return "Good Name";
     }
 
@@ -21,6 +19,10 @@ function checkName(name) {
     }
 
 }
+
+
+
+
 
 
 // passed:
